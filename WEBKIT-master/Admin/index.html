@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin-KIT</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="icon/all.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/admin_css.css">
+    <link rel="stylesheet" type="text/css" href="reponsive/reponsive_css.css">
+    <script type="text/javascript" src="js/admin_js.js"></script>
+    <script src="../public/ckeditor/ckeditor.js"></script>
+    <script src="../public/ckeditor/ckfinder/ckfinder.js"></script>
+</head>
+    <style type="text/css">
+        #manageMember{
+            overflow: auto;
+        }
+
+    </style>
+
+<body>
+    <header class="main-header">
+        <div class="name-clb">
+            <span class="name"><img src="img./logo.jpg"><b>KIT </b>CLUB</span>
+        </div>
+    </header>
+
+    <!-- menu left -->
+
+    <div class="col-md-2" id="menuLeft">
+        <script type="text/javascript">
+            $('#menuLeft').load('./menu.html');
+        </script>
+
+    </div>
+
+    <!-- dashboard -->
+
+    <div class="col-md-10 content" id="dashBoardAdmin">
+        <script type="text/javascript">
+            $('#dashBoardAdmin').load('./dashBoardAdmin.html');
+        </script>
+    </div>
+
+    <!-- quản lý Thành viên -->
+    <div class="col-md-10 content" id="manageMember">
+        <script type="text/javascript">
+            $('#manageMember').load('./manageMember.html');
+        </script>
+    </div>
+
+
+    <!-- quản lý Tài khoản -->
+    <div class="col-md-10 content " id="account">
+        <script type="text/javascript">
+            $('#account').load('./account.html');
+        </script>
+    </div>
+
+    <!-- quản lý bài viết -->
+    <div class="col-md-10 content " id="posts">
+        <script type="text/javascript">
+            $('#posts').load('./posts.html');
+        </script>
+    </div>
+
+    <!-- quản lý Tin tức -->
+    <div class="col-md-10 content " id="news">
+        <script type="text/javascript">
+            $('#news').load('./news.php');
+        </script>
+    </div>
+
+    <!-- quản lý Thông báo -->
+    <div class="col-md-10 content " id="notify">
+        <script type="text/javascript">
+            $('#notify').load('./notify.html');
+        </script>
+    </div>
+
+    <!-- quản lý Tin công nghệ -->
+    <div class="col-md-10 content " id="techNews">
+        <script type="text/javascript">
+            $('#techNews').load('./techNews.html');
+        </script>
+
+    </div>
+
+    <!-- quản lý chuyện đời IT -->
+    <div class="col-md-10 content " id="lifeStory">
+        <script type="text/javascript">
+            $('#lifeStory').load('./lifeStory.html');
+        </script>
+    </div>
+
+    <!-- quản lý Lịch họp CLB -->
+    <div class="col-md-10 content " id="meeting">
+        <script type="text/javascript">
+            $('#meeting').load('./meeting.html');
+        </script>
+    </div>
+
+    <!-- quản lý Sản phẩm -->
+    <div class="col-md-10 content " id="product">
+        <script type="text/javascript">
+            $('#product').load('./product.html');
+        </script>
+    </div>
+
+    <!-- quản lý Khóa học -->
+    <div class="col-md-10 content " id="course">
+        <script type="text/javascript">
+            $('#course').load('./course.html');
+        </script>
+    </div>
+
+    <!-- quản lý dự án -->
+    <div class="col-md-10 content " id="project">
+       <script type="text/javascript">
+            $('#project').load('./project.html');
+        </script>
+    </div>
+
+
+    <!-- show and hide menu -->
+    <div class="icon-content">
+        <i class="fas fa-align-justify" onclick="show()"></i>
+    </div>
+    <div class="icon-content-back">
+        <i class="fas fa-times-circle" onclick="hide()"></i>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<section class="content-header">
+    <h1>
+        Quản lý
+        <small>Control panel</small>
+    </h1>
+    <div class="breadcrumb">
+        <li><a href="#"><i class="fas fa-tachometer-alt"></i> Home</a>
+        </li>
+        <li class="active">Quản lí thành viên</li>
+    </div>
+</section>
+<div class="example">
+    <div class="container">
+        <div class="row">
+            <div class="header-admin">
+                <ul class="nav nav-tabs">
+                    <li><a href="#member-add" data-toggle="tab">Thêm thành viên <span class=""></span></a></li>
+                    <li><a href="#member-list" data-toggle="tab">Danh sách thành viên <span class=""></span></a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="member-add">
+                        <script type="text/javascript">
+                            $('#member-add').load('./addMember.html');
+                        </script>
+                    </div>
+                    <div class="tab-pane" id="member-list">
+                        <script type="text/javascript">
+                            $('#member-list').load('./listMember.html');
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

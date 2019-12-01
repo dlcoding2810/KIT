@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Member-KIT</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="icon./all.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/member_css.css">
+    <link rel="stylesheet" type="text/css" href="reponsive/reponsive_css.css">
+    <script type="text/javascript" src="js/member_js.js">
+
+    </script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="name-clb">
+            <span class="name"><img src="img./logo.jpg"><b>KIT </b>CLUB</span>
+        </div>
+
+    </header>
+
+    <div class="col-md-2" id="menuLeft">
+        <script type="text/javascript">
+            $('#menuLeft').load('./menuLeft.html');
+        </script>
+    </div>
+
+    <div class="col-md-10 content" id="dashBoard">
+        <script type="text/javascript">
+            $('#dashBoard').load('./dashBoard.html');
+        </script>
+    </div>
+
+    <!--Cai dat tai khoan-->
+    <div class="col-md-10 content " id="account">
+        <script type="text/javascript">
+            $('#account').load('./account.html');
+        </script>
+    </div>
+
+    <!-- Thông báo -->
+    <div class="col-md-10 content" id="notify">
+        <script type="text/javascript">
+            $('#notify').load('./notify.html');
+        </script>
+    </div>
+
+
+    <!-- Lịch họp-->
+    <div class="col-md-10 content" id="meeting">
+        <script type="text/javascript">
+            $('#meeting').load('./meeting.html');
+        </script>
+    </div>
+
+
+    <!-- Khóa học -->
+    <div class="col-md-10 content " id="course">
+        <script type="text/javascript">
+            $('#course').load('./course.html');
+        </script>
+    </div>
+
+    <!-- Dự án -->
+    <div class="col-md-10 content " id="project">
+       <script type="text/javascript">
+            $('#project').load('./project.html');
+        </script>
+    </div>
+
+    <!-- show and hide menu -->
+    <div class="icon-content">
+        <i class="fas fa-align-justify" onclick="show()"></i>
+    </div>
+    <div class="icon-content-back">
+        <i class="fas fa-times-circle" onclick="hide()"></i>
+    </div>
+
+</body>
+
+</html>
